@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-title>Detalles</mat-card-title>
+  <mat-card-content>
+    <div class="row">
+      <div class="col-4">
+        <img [src]="data?.image" width="200" height="200" />
+      </div>
+      <div class="col-8">
+        <mat-list role="list">
+          <mat-list-item role="listitem"
+            >Seller ID: {{ data?.selerId }}</mat-list-item
+          >
+          <mat-list-item role="listitem"
+            >Marca: {{ data?.brand }}</mat-list-item
+          >
+          <mat-list-item role="listitem"
+            >Envió Gratis: {{ data?.freeShipping ? 'Si' : 'No' }}</mat-list-item
+          >
+          <mat-list-item role="listitem"
+            >Tipo de Logística: {{ data?.logisticsType }}</mat-list-item
+          >
+          <mat-list-item role="listitem"
+            >Lugar de operación del Seller:
+            {{ data?.sellerPlaceOperation }}</mat-list-item
+          >
+          <mat-list-item role="listitem"
+            >Condición del articulo: {{ data?.priceRange }}</mat-list-item
+          >
+        </mat-list>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
